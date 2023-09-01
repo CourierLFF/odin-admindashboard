@@ -1,17 +1,15 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 .main-container {
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 8fr;
 }
 
-/* Remove Later, just for layout */
-.header,
-.sidebar,
-.main-content {
-    border: black solid 3px;
-}
-
 .header {
+    background-color: white;
     grid-column: 2 / 2;
     grid-row: 1 / 1;
     display: grid;
@@ -52,6 +50,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    background-color: #0ea5e9;
 }
 
 .main-content {
@@ -60,6 +59,7 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 4fr 3fr;
+    background-color: #e9e8e8;
 }
 
 .main-content-projects {
