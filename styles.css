@@ -16,32 +16,65 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
     gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header-searchbar {
     display: grid;
     grid-template-columns: 1fr 12fr;
+    padding-left: 32px;
+}
+
+.magnifying-glass {
+    align-self: center;
+    justify-self: center;
+}
+
+.searchbar {
+    background-color: #e5e7eb;
+    border: none;
+    border-radius: 16px;
+    height: 30px;
+    align-self: center;
 }
 
 .header-profile {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 300px;
+}
+
+.header-profile-name {
+    display: flex;
+    align-items: center;
+    gap: 8px
 }
 
 .header-welcome {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: bold;
 }
 
-.header-welcome-picture {
-    grid-column: 1 / 1;
-    grid-row: 1 / 3;
-}
 
 .header-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.header-buttons > button {
+    background-color: #0ea5e9;
+    border: none;
+    border-radius: 32px;
+    height: 45%;
+    width: 85%;
+    color: white;
 }
 
 .sidebar {
@@ -51,6 +84,7 @@
     flex-direction: column;
     gap: 32px;
     background-color: #0ea5e9;
+    padding-top: 16px;
 }
 
 .main-content {
