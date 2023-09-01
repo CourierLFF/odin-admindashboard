@@ -4,24 +4,59 @@
     grid-template-rows: 1fr 8fr;
 }
 
+/* Remove Later, just for layout */
 .header,
 .sidebar,
 .main-content {
     border: black solid 3px;
 }
 
-
 .header {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+}
+
+.header-top-half {
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+}
+
+.header-bottom-half {
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
 }
 
 .sidebar {
     grid-column: 1 / 1 ;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
 }
 
 .main-content {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 4fr 3fr;
+}
+
+.main-content-projects {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+}
+
+.main-content-announcements {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+.main-content-trending {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
 }
