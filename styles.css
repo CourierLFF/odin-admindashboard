@@ -83,6 +83,13 @@
     color: white;
 }
 
+.header-buttons > button:hover {
+    background-color: green;
+    height: 55%;
+    width: 90%;
+    transition: height 0.5s, width 0.5s;
+}
+
 .sidebar {
     grid-column: 1 / 1;
     grid-row: 1 / 3;
